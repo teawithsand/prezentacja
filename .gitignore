@@ -1,0 +1,46 @@
+# --- Node / Marp ---------------------------------------------------------
+node_modules/
+.npm/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Generated build outputs --------------------------------------------
+# Everything below is recreated by:  nix run .   (or ./build.sh)
+/out/
+/demo/
+.marp/
+.cache/
+
+# To version the final PDF/PPTX instead, replace /out/ with:
+#   /out/preview/
+#   /out/redacted.html
+# Remove /demo/ if you also want to version the five demo artefacts.
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Nix -----------------------------------------------------------------
+/result
+/result-*
+.direnv/
+
+# --- Logs and temporary files -------------------------------------------
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# --- Editors / OS --------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
